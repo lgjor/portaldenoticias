@@ -27,13 +27,14 @@ section header {
     img {
         height: 100%;
         object-fit: cover;
+        /*border-radius: 4px*/
     }
 
     figcaption{
         position: absolute;
         bottom: 0;
 
-        padding: 24px;
+        padding: 24px 24px 12px 24px;
 
         &:has(.text-lg){
             padding: 12px;
@@ -72,7 +73,6 @@ section header {
         grid-template-columns: repeat(4, 292px);
     }
     img {
-        
         height: 160 px;
         object-fit: cover;
     }

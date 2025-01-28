@@ -32,6 +32,10 @@
     font: var(--h3);
 }
 
+.text-spam{
+    font: var(--text-span)
+}
+
 .text-sm {
     font: var(--text-sm);
 }
