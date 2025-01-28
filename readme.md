@@ -18,7 +18,7 @@ Projeto desenvolvido a partir do curso Fullstack da <a href="https://www.rockets
 <br>
 
 <p align="center">
-  <img src="./github/preview.jpg" width="100%" alt="Projeto de links pessoais">
+  <img src="github/preview.jpg" width="100%" alt="Projeto portal de notícias">
 </p>
 
 ## 🚀 Tecnologias
