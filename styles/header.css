@@ -1,6 +1,5 @@
 #primary {
     padding-block: 20px;
-    font-weight: var(--text-h2);
     
     /* nesting css selector */
     div:nth-child(2) {
@@ -21,7 +20,6 @@ div {
 }
 
 #secondary {
-    font-weight: var(--text-span);
     padding-block: 14px;
     border: solid 1px var(--stroke-color);
     border-inline: none; /* remove bordas verticais */
