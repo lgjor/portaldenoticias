@@ -1,32 +1,38 @@
-#featured {
-    img {
-        height: 100%;
-        object-fit: cover;
-        border-radius: 4px;
+section header {
+    border-top: 1px solid var(--stroke-color);
+    padding-block: 12px 24px;
+    font: var(--text-span);
+
+    a {
+        justify-self: end;
+        align-items: center;
+        gap: 8px;
+
+        span {
+            background-image: url(../assets/icons/ArrowRight-white.svg);
+            width: 16px;
+            height: 16px;
+        }
+
+        &:hover span {
+            background-image: url(../assets/icons/ArrowRight-hover.svg);
+        }
     }
 }
 
-.card {
-    border-radius: 4px;
-    position: relative;
-    overflow: hidden;
+#featured {
 
-    &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        top: 50%;
-        background: linear-gradient(
-            180dev,
-            transparent 0%,
-            #020617 100%
-        );
-        
+    grid-area: featured;
+
+    img {
+        height: 100%;
+        object-fit: cover;
     }
 
     figcaption{
         position: absolute;
         bottom: 0;
+
         padding: 24px;
 
         &:has(.text-lg){
@@ -36,5 +42,83 @@
         h2{
             margin-top: 8px;
         }
+    }
+
+    .card {
+        border-radius: 4px;
+        overflow: hidden;
+        position: relative;
+    
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            top: 50%;
+            background: linear-gradient(
+                180deg,
+                transparent 0%,
+                #020617 100%
+            );
+            
+        }
+    }
+}
+
+#weekly {
+
+    grid-area: weekly;
+
+    &>div {
+        grid-template-columns: repeat(4, 292px);
+    }
+    img {
+        
+        height: 160 px;
+        object-fit: cover;
+    }
+
+    figure {
+        position: relative;
+
+        .content-tag {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+        p {
+            margin-top: 8px;
+            font-weight: 800;
+        }
+    }
+}
+
+#ai {
+    grid-area: ai;
+
+    img{
+        height: 176px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    
+    h3 {
+        margin-block: 8px 4px;
+    }
+}
+
+aside {
+    grid-area: aside;
+}
+
+#more {
+    margin-top: 32px;
+
+    h3 {
+        margin-top: 8px;
+    }
+    img{
+        height: 72px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
     }
 }
