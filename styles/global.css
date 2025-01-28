@@ -14,7 +14,7 @@
     --text-color-secondary: #CBD5E1;
 
       /* Definindo as fontes */
-    --font-family: "Archivo", serif;
+    --font-family: 'Archivo', sans-serif;
     --text-h1: 800 24px/135% var(--font-family);
     --text-h2: 800 16px/140% var(--font-family);
     --text-h3: 800 14px/140% var(--font-family);
@@ -23,14 +23,12 @@
     --text-p: 400 14px/160% var(--font-family);
 }
 
-.container {
-    max-width: 1280px;
-    padding-inline: 32px; /*eixo horizontal*/
-    margin-inline: auto;
+main {
+    margin-top: 40px;
 }
 
 body {
-    font: var(--font-family);
+    font-family: var(--font-family);
     color: var(--text-color-primary);
     background-color: var(--bg-color);
 }
@@ -48,12 +46,13 @@ h1, h2, h3 {
     font: inherit;
 }
 
-/* utility fisrt - No CSS é quando temos uma classe que vai fazer apenas uma coisa */
-.grid {
-    display: grid;
+.container {
+    max-width: 1280px;
+    padding-inline: 32px; /*eixo horizontal*/
+    margin-inline: auto;
 }
 
-.grid-flow-col{
-    grid-auto-flow: column;
-
+img{
+    max-width: 100%; /* largura máxima da imagem até 100% da célula do grid em que está contida */
 }
+
